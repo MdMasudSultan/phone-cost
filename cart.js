@@ -1,4 +1,6 @@
-// + option
+//  case total cost 
+ 
+ // + option
 document.getElementById('case-plusnum').addEventListener('click' , function(){
     mobileCaseCost(true)
 });
@@ -21,33 +23,7 @@ function mobileCaseCost(isIncrise) {
         caseInput.value = caseNewCount;
         const caseTotal = caseNewCount * 59;
         document.getElementById('case-total').innerText = '$' + caseTotal;
-}            
-// phone Total plus count 
-// document.getElementById('phone-Plus').addEventListener('click',function() {
-//     const phoneInput = document.getElementById('phone-count');
-//     const phoneCount = parseInt(phoneInput.value);
-//     const phoneNewCount = phoneCount + 1;
-//     phoneInput.value = phoneNewCount;
-
-//     const phoneTotalCost = phoneNewCount * 1219;
-//     document.getElementById('phone-cost').innerText = "$" + phoneTotalCost
-    
-// })
-
-// phone Total mines count
-// document.getElementById('phone-decreas').addEventListener('click', function() {
-//     const phoneInput = document.getElementById('phone-count');
-//     const phoneCount = parseInt(phoneInput.value);
-//     if (phoneCount > 0) {
-//          phoneNewCount = phoneCount - 1;
-        
-//     }
-//     phoneInput.value = phoneNewCount;
-
-//     const phoneTotalCost = phoneNewCount * 1219;
-//     document.getElementById('phone-cost').innerText = "$" + phoneTotalCost;
-
-// })
+}        
 
 // phone Total Count 
 function phoneTotalCost(isincreases) {
@@ -78,6 +54,34 @@ document.getElementById('phone-Plus').addEventListener('click',function() {
 document.getElementById('phone-decreas').addEventListener('click', function() { 
     phoneTotalCost(false);
 })
+    
+
+// phone Total plus count 
+// document.getElementById('phone-Plus').addEventListener('click',function() {
+//     const phoneInput = document.getElementById('phone-count');
+//     const phoneCount = parseInt(phoneInput.value);
+//     const phoneNewCount = phoneCount + 1;
+//     phoneInput.value = phoneNewCount;
+
+//     const phoneTotalCost = phoneNewCount * 1219;
+//     document.getElementById('phone-cost').innerText = "$" + phoneTotalCost
+    
+// })
+
+// phone Total mines count
+// document.getElementById('phone-decreas').addEventListener('click', function() {
+//     const phoneInput = document.getElementById('phone-count');
+//     const phoneCount = parseInt(phoneInput.value);
+//     if (phoneCount > 0) {
+//          phoneNewCount = phoneCount - 1;
+        
+//     }
+//     phoneInput.value = phoneNewCount;
+
+//     const phoneTotalCost = phoneNewCount * 1219;
+//     document.getElementById('phone-cost').innerText = "$" + phoneTotalCost;
+
+// })
 
 
 
